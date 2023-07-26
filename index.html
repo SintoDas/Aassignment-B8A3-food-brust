@@ -26,6 +26,8 @@
             colors: {
               clifford: "#da373d",
               "nav-color": " #F85559",
+              "text-color": "#12121299",
+              "border-color": "#1212121A",
             },
           },
         },
@@ -76,31 +78,53 @@
                 </label>
                 <ul
                   tabindex="0"
-                  class="menu menu-sm dropdown-content mt-10 z-[1] p-1 lg:p-5 shadow bg-nav-color rounded-box"
+                  class="menu menu-sm dropdown-content mt-10 z-[1] p-1 shadow bg-nav-color rounded-box"
                 >
-                  <li><a class="text-lg font-medium text-white">Home</a></li>
                   <li>
-                    <a class="text-lg font-medium text-white">About Us</a>
+                    <a class="text-sm lg:text-lg font-medium text-white"
+                      >Home</a
+                    >
                   </li>
-                  <li><a class="text-lg font-medium text-white">Shop</a></li>
                   <li>
-                    <a class="text-lg font-medium text-white">All Fruits</a>
+                    <a class="text-sm lg:text-lg font-medium text-white"
+                      >About Us</a
+                    >
+                  </li>
+                  <li>
+                    <a class="text-sm lg:text-lg font-medium text-white"
+                      >Shop</a
+                    >
+                  </li>
+                  <li>
+                    <a class="text-sm lg:text-lg font-medium text-white"
+                      >All Fruits</a
+                    >
                   </li>
                 </ul>
               </div>
             </div>
             <div class="hidden lg:flex">
-              <ul class="menu menu-horizontal px-5">
-                <li><a class="text-lg font-medium text-white">Home</a></li>
-                <li><a class="text-lg font-medium text-white">About Us</a></li>
-                <li><a class="text-lg font-medium text-white">Shop</a></li>
+              <ul class="menu menu-horizontal px-2 lg:px-5">
                 <li>
-                  <a class="text-lg font-medium text-white">All Fruits</a>
+                  <a class="text-sm lg:text-lg font-medium text-white">Home</a>
+                </li>
+                <li>
+                  <a class="text-sm lg:text-lg font-medium text-white"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a class="text-sm lg:text-lg font-medium text-white">Shop</a>
+                </li>
+                <li>
+                  <a class="text-sm lg:text-lg font-medium text-white"
+                    >All Fruits</a
+                  >
                 </li>
               </ul>
             </div>
           </div>
-          <div class="navbar-center px-1 lg:px-20">
+          <div class="navbar-center px-1 lg:px-10 lg:mr-12">
             <img class="ml-1 lg:ml-2" src="./images/logo.png" alt="" />
             <a class="btn btn-ghost normal-case text-white text-xl"
               >Fruit Burst</a
@@ -155,7 +179,7 @@
                 </p>
 
                 <button
-                  class="btn bg-[#F85559] h-16 rounded-lg py-6 px-8 mt-2 lg:ml-2"
+                  class="bg-[#F85559] text-white h-16 rounded-lg py-5 px-8 mt-2 lg:ml-2"
                 >
                   Shop Now
                 </button>
@@ -183,7 +207,7 @@
                 </p>
 
                 <button
-                  class="btn bg-[#F85559] h-16 rounded-lg py-6 px-8 mt-2 lg:ml-2"
+                  class="bg-[#F85559] h-16 rounded-lg py-6 px-8 mt-2 lg:ml-2"
                 >
                   Shop Now
                 </button>
@@ -210,7 +234,7 @@
                 </p>
 
                 <button
-                  class="btn bg-[#F85559] h-16 rounded-lg py-6 px-8 mt-2 lg:ml-2"
+                  class="bg-[#F85559] h-16 rounded-lg py-6 px-8 mt-2 lg:ml-2"
                 >
                   Shop Now
                 </button>
@@ -237,7 +261,7 @@
                 </p>
 
                 <button
-                  class="btn bg-[#F85559] h-16 rounded-lg py-6 px-8 mt-2 lg:ml-2"
+                  class="bg-[#F85559] h-16 rounded-lg py-6 px-8 mt-2 lg:ml-2"
                 >
                   Shop Now
                 </button>
@@ -254,7 +278,229 @@
       </div>
     </header>
 
-    <main></main>
+    <main>
+      <!-- deal section -->
+      <section
+        class="max-width-screen-xl max-auto px-5 py-2 md:px-16 lg:px-24 mt-20"
+      >
+        <div
+          class="flex flex-col space-y-4 md:flex-col lg:flex-row items-center"
+        >
+          <div class="flex-1 space-y-6 text-center lg:text-left lg:px-10">
+            <h2 class="text-black font-extrabold text-5xl">Deal of the day</h2>
+            <p class="font-medium text-color">
+              Contrary to popular belief, is not simply random text. It has
+              roots in a piece of classical Latin literature from 45 BC, making
+              it over 2000 years old.
+            </p>
+          </div>
+          <div class="flex gap-5 flex-1">
+            <div>
+              <h2 class="text-black font-extrabold text-lg lg:text-5xl">
+                Days
+              </h2>
+              <p class="text-color font-medium text-center py-2">29</p>
+            </div>
+            <div>
+              <h2 class="text-black font-extrabold text-lg lg:text-5xl">
+                Hours
+              </h2>
+              <p class="text-color font-medium text-center py-2">15</p>
+            </div>
+            <div>
+              <h2 class="text-black font-extrabold text-lg lg:text-5xl">
+                Minutes
+              </h2>
+              <p class="text-color font-medium text-center py-2">15</p>
+            </div>
+            <div>
+              <h2 class="text-black font-extrabold text-lg lg:text-5xl">
+                seconds
+              </h2>
+              <p class="text-color font-medium text-center py-2">08</p>
+            </div>
+          </div>
+        </div>
+        <!-- cards -->
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div class="card space-y-12 border-2 border-border-color">
+            <figure class="px-10 pt-10">
+              <img src="/images/fruit6.png" alt="fruit" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center space-y-6">
+              <h2 class="text-black font-bold">12.90$ - 18.85$</h2>
+              <p class="text-text-color font-medium">Apples</p>
+              <div class="rating">
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                  checked
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+              </div>
+              <div class="card-actions">
+                <button class="text-[#F85559] font-bold text-lg">
+                  details
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card space-y-12 border-2 border-border-color">
+            <figure class="px-10 pt-10">
+              <img src="/images/fruit7.png" alt="fruit" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center space-y-6">
+              <h2 class="text-black font-bold">12.90$ - 18.85$</h2>
+              <p class="text-text-color font-medium">Apples</p>
+              <div class="rating">
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                  checked
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+              </div>
+              <div class="card-actions">
+                <button class="text-[#F85559] font-bold text-lg">
+                  details
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card space-y-12 border-2 border-border-color">
+            <figure class="px-10 pt-10">
+              <img src="/images/fruit8.png" alt="fruit" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center space-y-6">
+              <h2 class="text-black font-bold">12.90$ - 18.85$</h2>
+              <p class="text-text-color font-medium">Apples</p>
+              <div class="rating">
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                  checked
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+              </div>
+              <div class="card-actions">
+                <button class="text-[#F85559] font-bold text-lg">
+                  details
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card space-y-12 border-2 border-border-color">
+            <figure class="px-10 pt-10">
+              <img src="/images/fruit9.png" alt="fruit" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center space-y-6">
+              <h2 class="text-black font-bold">12.90$ - 18.85$</h2>
+              <p class="text-text-color font-medium">Apples</p>
+              <div class="rating">
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                  checked
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+              </div>
+              <div class="card-actions">
+                <button class="text-[#F85559] font-bold text-lg">
+                  details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-5">
+          <button
+            class="bg-[#F85559] text-white h-16 rounded-lg py-5 px-8 mt-2 lg:ml-2"
+          >
+            Shop Now
+          </button>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
