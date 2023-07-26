@@ -16,11 +16,16 @@
       tailwind.config = {
         theme: {
           extend: {
-            backgroundImage: {},
+            backgroundImage: {
+              "banner-bg-1": "url('./images/banner1.png')",
+              "banner-bg-2": "url('./images/banner2.png')",
+              "banner-bg-3": "url('./images/banner3.png')",
+              "banner-bg-4": "url('./images/banner4.png')",
+            },
 
             colors: {
               clifford: "#da373d",
-              "nav-color": "#F85559",
+              "nav-color": " #F85559",
             },
           },
         },
@@ -49,14 +54,14 @@
     <header class="max-width-screen-xl max-auto px-5 py-2 md:px-16 lg:px-24">
       <!-- navbar -->
       <div>
-        <div class="navbar bg-nav-color py-7 px-4 mt-10 rounded-full">
-          <div class="nav-start">
+        <div class="navbar bg-nav-color py-5 px-2 mt-10 rounded-full">
+          <div class="nav-start lg:w-full">
             <div class="bg-nav-color">
-              <div class="dropdown flex-1">
+              <div class="dropdown">
                 <label tabindex="0" class="btn btn-ghost lg:hidden">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
+                    class="h-6 w-5"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -71,7 +76,7 @@
                 </label>
                 <ul
                   tabindex="0"
-                  class="menu menu-sm dropdown-content mt-10 z-[1] p-2 shadow bg-nav-color rounded-box w-52"
+                  class="menu menu-sm dropdown-content mt-10 z-[1] p-1 lg:p-5 shadow bg-nav-color rounded-box"
                 >
                   <li><a class="text-lg font-medium text-white">Home</a></li>
                   <li>
@@ -85,18 +90,18 @@
               </div>
             </div>
             <div class="hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
+              <ul class="menu menu-horizontal px-5">
                 <li><a class="text-lg font-medium text-white">Home</a></li>
                 <li><a class="text-lg font-medium text-white">About Us</a></li>
                 <li><a class="text-lg font-medium text-white">Shop</a></li>
                 <li>
-                  <a class="text-lg font-medium text-white pl-4">All Fruits</a>
+                  <a class="text-lg font-medium text-white">All Fruits</a>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="navbar-center">
-            <img class="ml-2" src="./images/logo.png" alt="" />
+          <div class="navbar-center px-1 lg:px-20">
+            <img class="ml-1 lg:ml-2" src="./images/logo.png" alt="" />
             <a class="btn btn-ghost normal-case text-white text-xl"
               >Fruit Burst</a
             >
@@ -124,7 +129,7 @@
                     </svg>
                   </span>
                   <input
-                    class="w-full bg-white border-slate-300 rounded-full py-2 pl-10 pr-4 focus:outline-none"
+                    class="w-full bg-white border-slate-300 rounded-full py-2 lg:mr-5 lg:px-10"
                     placeholder="Search here"
                     type="text"
                   />
@@ -134,10 +139,119 @@
           </div>
         </div>
       </div>
-      <!--banner-->
-      <div
-        class="max-width-screen-xl max-auto px-5 py-2 md:px-16 lg:px-24"
-      ></div>
+
+      <!-- banner carousal -->
+      <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full">
+          <div class="hero min-h-[calc(100vh-69px)] bg-banner-bg-1 mt-10">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-full space-y-6 text-center">
+                <h1 class="mb-5 text-7xl font-bold">
+                  Exotic tastes at your doorstep
+                </h1>
+                <p class="font-medium text-xl">
+                  We supply highly quality organic products
+                </p>
+
+                <button
+                  class="btn bg-[#F85559] h-16 rounded-lg py-6 px-8 mt-2 lg:ml-2"
+                >
+                  Shop Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <div class="hero min-h-[calc(100vh-69px)] bg-banner-bg-2 mt-10">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-full space-y-6 text-center">
+                <h1 class="mb-5 text-7xl font-bold">
+                  Exotic tastes at your doorstep
+                </h1>
+                <p class="font-medium text-xl">
+                  We supply highly quality organic products
+                </p>
+
+                <button
+                  class="btn bg-[#F85559] h-16 rounded-lg py-6 px-8 mt-2 lg:ml-2"
+                >
+                  Shop Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <div class="hero min-h-[calc(100vh-100px)] bg-banner-bg-3 mt-10">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-full space-y-6 text-center">
+                <h1 class="mb-5 text-7xl font-bold">
+                  Exotic tastes at your doorstep
+                </h1>
+                <p class="font-medium text-xl">
+                  We supply highly quality organic products
+                </p>
+
+                <button
+                  class="btn bg-[#F85559] h-16 rounded-lg py-6 px-8 mt-2 lg:ml-2"
+                >
+                  Shop Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide4" class="carousel-item relative w-full">
+          <div class="hero min-h-[calc(100vh-69px)] bg-banner-bg-4 mt-10">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-full space-y-6 text-center">
+                <h1 class="mb-5 text-7xl font-bold">
+                  Exotic tastes at your doorstep
+                </h1>
+                <p class="font-medium text-xl">
+                  We supply highly quality organic products
+                </p>
+
+                <button
+                  class="btn bg-[#F85559] h-16 rounded-lg py-6 px-8 mt-2 lg:ml-2"
+                >
+                  Shop Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
     </header>
 
     <main></main>
