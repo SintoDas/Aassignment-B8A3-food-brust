@@ -67,17 +67,19 @@
                     xmlns="http://www.w3.org/2000/svg"
                     class="h-6 w-5"
                     fill="none"
-                    viewBox="0 0 24 24"
+                    viewBox="0 0 20 20"
                     stroke="currentColor"
                   >
                     <path
                       stroke-linecap="round"
                       stroke-linejoin="round"
                       stroke-width="2"
-                      d="M4 6h16M4 12h8m-8 6h16"
+                      path
+                      d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"
                     />
                   </svg>
                 </label>
+
                 <ul
                   tabindex="0"
                   class="menu menu-sm dropdown-content mt-10 z-[1] p-1 shadow bg-nav-color rounded-box"
@@ -170,10 +172,10 @@
       <div class="carousel w-full">
         <div id="slide1" class="carousel-item relative w-full">
           <div class="hero min-h-[calc(100vh-69px)] bg-banner-bg-1 mt-10">
-            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-overlay bg-opacity-80"></div>
             <div class="hero-content text-center text-neutral-content">
               <div class="max-w-full space-y-6 text-center">
-                <h1 class="mb-5 text-7xl font-bold">
+                <h1 class="mb-5 text-3xl lg:text-7xl font-bold">
                   Exotic tastes at your doorstep
                 </h1>
                 <p class="font-medium text-xl">
@@ -198,10 +200,10 @@
         </div>
         <div id="slide2" class="carousel-item relative w-full">
           <div class="hero min-h-[calc(100vh-69px)] bg-banner-bg-2 mt-10">
-            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-overlay bg-opacity-80"></div>
             <div class="hero-content text-center text-neutral-content">
               <div class="max-w-full space-y-6 text-center">
-                <h1 class="mb-5 text-7xl font-bold">
+                <h1 class="mb-5 text-3xl lg:text-7xl font-bold">
                   Exotic tastes at your doorstep
                 </h1>
                 <p class="font-medium text-xl">
@@ -225,10 +227,10 @@
         </div>
         <div id="slide3" class="carousel-item relative w-full">
           <div class="hero min-h-[calc(100vh-100px)] bg-banner-bg-3 mt-10">
-            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-overlay bg-opacity-80"></div>
             <div class="hero-content text-center text-neutral-content">
               <div class="max-w-full space-y-6 text-center">
-                <h1 class="mb-5 text-7xl font-bold">
+                <h1 class="mb-5 text-3xl lg:text-7xl font-bold">
                   Exotic tastes at your doorstep
                 </h1>
                 <p class="font-medium text-xl">
@@ -252,10 +254,10 @@
         </div>
         <div id="slide4" class="carousel-item relative w-full">
           <div class="hero min-h-[calc(100vh-69px)] bg-banner-bg-4 mt-10">
-            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-overlay bg-opacity-80"></div>
             <div class="hero-content text-center text-neutral-content">
               <div class="max-w-full space-y-6 text-center">
-                <h1 class="mb-5 text-7xl font-bold">
+                <h1 class="mb-5 text-3xl lg:text-7xl font-bold">
                   Exotic tastes at your doorstep
                 </h1>
                 <p class="font-medium text-xl">
@@ -278,6 +280,31 @@
           </div>
         </div>
       </div>
+      <!-- banner bonus part -->
+      <div
+        class="grid grid-cols-5 gap-4 invisible lg:visible mx-auto w-9/12 text-[ #121212CC] bg-gradient-to-r drop-shadow from-[rgba(0, 0, 0, 0.05) font-medium text-xl items-center justify-center rounded-lg -mt-24 bg-white p-10"
+      >
+        <div class="space-y-2">
+          <img class="h-full" src="images/fruit1.png" alt="" />
+          <p>Strawberry</p>
+        </div>
+        <div class="space-y-2">
+          <img src="images/fruit2.png" alt="" />
+          <p>Orange</p>
+        </div>
+        <div class="space-y-2">
+          <img class="h-full" src="images/fruit3.png" alt="" />
+          <p>Mango</p>
+        </div>
+        <div class="space-y-2">
+          <img class="h-full" src="images/fruit4.png" alt="" />
+          <p>Strawberry</p>
+        </div>
+        <div class="space-y-2">
+          <img class="h-full" src="images/fruit5.png" alt="" />
+          <p>Pomegranate</p>
+        </div>
+      </div>
     </header>
 
     <main>
@@ -297,29 +324,46 @@
             </p>
           </div>
           <div class="flex gap-5 flex-1">
-            <div>
-              <h2 class="text-black font-extrabold text-lg lg:text-5xl">
-                Days
-              </h2>
-              <p class="text-color font-medium text-center py-2">29</p>
+            <div class="flex">
+              <div class="px-1">
+                <h2 class="text-black font-extrabold text-lg lg:text-5xl">
+                  29
+                </h2>
+                <p class="text-color font-medium text-center py-2">Days</p>
+              </div>
+              <i
+                class="text-black font-extrabold text-lg lg:text-5xl mx-3 mt-2 fa-solid fa-ellipsis-vertical"
+              ></i>
             </div>
-            <div>
-              <h2 class="text-black font-extrabold text-lg lg:text-5xl">
-                Hours
-              </h2>
-              <p class="text-color font-medium text-center py-2">15</p>
+            <div class="flex">
+              <div class="px-1">
+                <h2 class="text-black font-extrabold text-lg lg:text-5xl">
+                  15
+                </h2>
+                <p class="text-color font-medium text-center py-2">Hours</p>
+              </div>
+              <i
+                class="text-black font-extrabold text-lg lg:text-5xl mx-3 mt-2 fa-solid fa-ellipsis-vertical"
+              ></i>
             </div>
-            <div>
-              <h2 class="text-black font-extrabold text-lg lg:text-5xl">
-                Minutes
-              </h2>
-              <p class="text-color font-medium text-center py-2">15</p>
+            <div class="flex">
+              <div class="px-1">
+                <h2 class="text-black font-extrabold text-lg lg:text-5xl">
+                  25
+                </h2>
+                <p class="text-color font-medium text-center py-2">Minutes</p>
+              </div>
+              <i
+                class="text-black font-extrabold text-lg lg:text-5xl mx-3 mt-2 fa-solid fa-ellipsis-vertical"
+              ></i>
             </div>
-            <div>
-              <h2 class="text-black font-extrabold text-lg lg:text-5xl">
-                seconds
-              </h2>
-              <p class="text-color font-medium text-center py-2">08</p>
+            <div class="flex">
+              <div class="px-1">
+                <h2 class="text-black font-extrabold text-lg lg:text-5xl">
+                  08
+                </h2>
+                <p class="text-color font-medium text-center py-2">Seconds</p>
+              </div>
             </div>
           </div>
         </div>
@@ -330,7 +374,11 @@
               <img src="./images/fruit6.png" alt="fruit" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center space-y-6">
-              <h2 class="text-black font-bold">12.90$ - 18.85$</h2>
+              <h2
+                class="text-black font-bold border-b-2 border-[#1122331A] mt-2"
+              >
+                12.90$ - 18.85$
+              </h2>
               <p class="text-text-color font-medium">Apple</p>
               <div class="rating">
                 <input
@@ -427,33 +475,35 @@
               <img src="./images/fruit7.png" alt="fruit" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center space-y-6">
-              <h2 class="text-black font-bold">12.90$ - 18.85$</h2>
+              <h2 class="text-black font-bold border-b-2 border-[#1122331A]">
+                12.90$ - 18.85$
+              </h2>
               <p class="text-text-color font-medium">Orange</p>
               <div class="rating">
                 <input
                   type="radio"
-                  name="rating-2"
+                  name="rating-3"
                   class="mask mask-star-2 bg-orange-400"
                 />
                 <input
                   type="radio"
-                  name="rating-2"
+                  name="rating-3"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-3"
                   class="mask mask-star-2 bg-orange-400"
                   checked
                 />
                 <input
                   type="radio"
-                  name="rating-2"
+                  name="rating-3"
                   class="mask mask-star-2 bg-orange-400"
                 />
                 <input
                   type="radio"
-                  name="rating-2"
-                  class="mask mask-star-2 bg-orange-400"
-                />
-                <input
-                  type="radio"
-                  name="rating-2"
+                  name="rating-3"
                   class="mask mask-star-2 bg-orange-400"
                 />
               </div>
@@ -478,28 +528,28 @@
                     <div class="rating">
                       <input
                         type="radio"
-                        name="rating-2"
+                        name="rating-3"
                         class="mask mask-star-2 bg-orange-400"
                       />
                       <input
                         type="radio"
-                        name="rating-2"
+                        name="rating-3"
                         class="mask mask-star-2 bg-orange-400"
                         checked
                       />
                       <input
                         type="radio"
-                        name="rating-2"
+                        name="rating-3"
                         class="mask mask-star-2 bg-orange-400"
                       />
                       <input
                         type="radio"
-                        name="rating-2"
+                        name="rating-3"
                         class="mask mask-star-2 bg-orange-400"
                       />
                       <input
                         type="radio"
-                        name="rating-2"
+                        name="rating-3"
                         class="mask mask-star-2 bg-orange-400"
                       />
                     </div>
@@ -526,33 +576,35 @@
               <img src="./images/fruit8.png" alt="fruit" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center space-y-6">
-              <h2 class="text-black font-bold">12.90$ - 18.85$</h2>
+              <h2 class="text-black font-bold border-b-2 border-[#1122331A]">
+                12.90$ - 18.85$
+              </h2>
               <p class="text-text-color font-medium">Red Dragon</p>
               <div class="rating">
                 <input
                   type="radio"
-                  name="rating-2"
+                  name="rating-4"
                   class="mask mask-star-2 bg-orange-400"
                 />
                 <input
                   type="radio"
-                  name="rating-2"
+                  name="rating-4"
                   class="mask mask-star-2 bg-orange-400"
                   checked
                 />
                 <input
                   type="radio"
-                  name="rating-2"
+                  name="rating-4"
                   class="mask mask-star-2 bg-orange-400"
                 />
                 <input
                   type="radio"
-                  name="rating-2"
+                  name="rating-4"
                   class="mask mask-star-2 bg-orange-400"
                 />
                 <input
                   type="radio"
-                  name="rating-2"
+                  name="rating-4"
                   class="mask mask-star-2 bg-orange-400"
                 />
               </div>
@@ -577,28 +629,28 @@
                     <div class="rating">
                       <input
                         type="radio"
-                        name="rating-2"
+                        name="rating-4"
                         class="mask mask-star-2 bg-orange-400"
                       />
                       <input
                         type="radio"
-                        name="rating-2"
+                        name="rating-4"
                         class="mask mask-star-2 bg-orange-400"
                         checked
                       />
                       <input
                         type="radio"
-                        name="rating-2"
+                        name="rating-4"
                         class="mask mask-star-2 bg-orange-400"
                       />
                       <input
                         type="radio"
-                        name="rating-2"
+                        name="rating-4"
                         class="mask mask-star-2 bg-orange-400"
                       />
                       <input
                         type="radio"
-                        name="rating-2"
+                        name="rating-4"
                         class="mask mask-star-2 bg-orange-400"
                       />
                     </div>
@@ -625,33 +677,35 @@
               <img src="./images/fruit9.png" alt="fruit" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center space-y-6">
-              <h2 class="text-black font-bold">12.90$ - 18.85$</h2>
+              <h2 class="text-black font-bold border-b-2 border-[#1122331A]">
+                12.90$ - 18.85$
+              </h2>
               <p class="text-text-color font-medium">Banana</p>
               <div class="rating">
                 <input
                   type="radio"
-                  name="rating-2"
+                  name="rating-5"
                   class="mask mask-star-2 bg-orange-400"
                 />
                 <input
                   type="radio"
-                  name="rating-2"
+                  name="rating-5"
                   class="mask mask-star-2 bg-orange-400"
                   checked
                 />
                 <input
                   type="radio"
-                  name="rating-2"
+                  name="rating-5"
                   class="mask mask-star-2 bg-orange-400"
                 />
                 <input
                   type="radio"
-                  name="rating-2"
+                  name="rating-5"
                   class="mask mask-star-2 bg-orange-400"
                 />
                 <input
                   type="radio"
-                  name="rating-2"
+                  name="rating-5"
                   class="mask mask-star-2 bg-orange-400"
                 />
               </div>
@@ -679,28 +733,28 @@
                       <div class="rating">
                         <input
                           type="radio"
-                          name="rating-2"
+                          name="rating-5"
                           class="mask mask-star-2 bg-orange-400"
                         />
                         <input
                           type="radio"
-                          name="rating-2"
+                          name="rating-5"
                           class="mask mask-star-2 bg-orange-400"
                           checked
                         />
                         <input
                           type="radio"
-                          name="rating-2"
+                          name="rating-5"
                           class="mask mask-star-2 bg-orange-400"
                         />
                         <input
                           type="radio"
-                          name="rating-2"
+                          name="rating-5"
                           class="mask mask-star-2 bg-orange-400"
                         />
                         <input
                           type="radio"
-                          name="rating-2"
+                          name="rating-5"
                           class="mask mask-star-2 bg-orange-400"
                         />
                       </div>
@@ -848,12 +902,14 @@
 
         <!-- contribution section -->
         <div class="grid grid-cols-1 lg:grid-cols-3 mt-20 gap-4">
-          <div>
+          <div class="order-2 lg:order-1">
             <div class="flex items-center gap-5">
               <i class="fa-solid fa-people-group rounded-s-full"></i>
               <div class="space-y-2 mt-5">
-                <h3 class="text-black text-2xl font-bold">Dedicated Team</h3>
-                <hr />
+                <h3 class="text-black text-2xl font-bold border-b-2">
+                  Dedicated Team
+                </h3>
+
                 <p>
                   Professional employees are there for you to pick the most
                   amazing and fresh fruits.
@@ -861,10 +917,11 @@
               </div>
             </div>
             <div class="flex items-center gap-5">
-              <i class="fa-solid fa-people-group rounded-s-full"></i>
+              <i class="fa-regular fa-heart"></i>
               <div class="space-y-2 mt-5">
-                <h3 class="text-black text-2xl font-bold">Dedicated Team</h3>
-                <hr />
+                <h3 class="text-black text-2xl font-bold border-b-2">
+                  Fresh is Best
+                </h3>
                 <p>
                   Professional employees are there for you to pick the most
                   amazing and fresh fruits.
@@ -872,10 +929,12 @@
               </div>
             </div>
             <div class="flex items-center gap-5">
-              <i class="fa-solid fa-people-group rounded-s-full"></i>
+              <i class="fa-solid fa-gift"></i>
               <div class="space-y-2 mt-5">
-                <h3 class="text-black text-2xl font-bold">Dedicated Team</h3>
-                <hr />
+                <h3 class="text-black text-2xl font-bold border-b-2">
+                  Gift Certificates
+                </h3>
+
                 <p>
                   Professional employees are there for you to pick the most
                   amazing and fresh fruits.
@@ -883,37 +942,41 @@
               </div>
             </div>
           </div>
-          <div class="mt-7">
+          <div class="mt-7 order-first lg:order-2">
             <img src="images/whychoose1.png" alt="" />
           </div>
-          <div>
-            <div class="flex items-center gap-5">
-              <i class="fa-solid fa-people-group rounded-s-full"></i>
-              <div class="space-y-2 mt-5 text-end">
-                <h3 class="text-black text-2xl font-bold">Dedicated Team</h3>
-                <hr />
+          <div class="order-3 lg:order-3">
+            <div class="flex items-center gap-5 flex-row lg:flex-row-reverse">
+              <i class="fa-solid fa-parachute-box"></i>
+              <div class="space-y-2 mt-5 text-start lg:text-end">
+                <h3 class="text-black text-2xl font-bold border-b-2">
+                  Integrated Supplier
+                </h3>
                 <p>
                   Professional employees are there for you to pick the most
                   amazing and fresh fruits.
                 </p>
               </div>
             </div>
-            <div class="flex items-center gap-5">
-              <i class="fa-solid fa-people-group rounded-s-full"></i>
-              <div class="space-y-2 mt-5 text-end">
-                <h3 class="text-black text-2xl font-bold">Dedicated Team</h3>
-                <hr />
+            <div class="flex items-center gap-5 flex-row lg:flex-row-reverse">
+              <i class="fa-solid fa-house-medical"></i>
+              <div class="space-y-2 mt-5 text-start lg:text-end">
+                <h3 class="text-black text-2xl font-bold border-b-2">
+                  Sustainable Practice
+                </h3>
                 <p>
                   Professional employees are there for you to pick the most
                   amazing and fresh fruits.
                 </p>
               </div>
             </div>
-            <div class="flex items-center gap-5">
-              <i class="fa-solid fa-people-group rounded-s-full"></i>
-              <div class="space-y-2 mt-5 text-end">
-                <h3 class="text-black text-2xl font-bold">Dedicated Team</h3>
-                <hr />
+            <div class="flex items-center gap-5 flex-row lg:flex-row-reverse">
+              <i class="fa-regular fa-thumbs-up"></i>
+              <div class="space-y-2 mt-5 text-start lg:text-end">
+                <h3 class="text-black text-2xl font-bold border-b-2">
+                  The Benefits Only
+                </h3>
+
                 <p>
                   Professional employees are there for you to pick the most
                   amazing and fresh fruits.
@@ -931,7 +994,9 @@
         <a class="font-bold text-4xl" href="">Food Brust</a>
       </div>
 
-      <div class="grid grid-flow-col gap-4 text-white font-semibold text-lg">
+      <div
+        class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 text-white font-semibold text-lg"
+      >
         <a class="link link-hover">Home</a>
         <a class="link link-hover">About us</a>
         <a class="link link-hover">Shop</a>
